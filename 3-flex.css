@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;    
+}
+
+/* Create flex container so flex layout is only applied to the contents inside this container. In this case, header is not included. */
+.flex-container {
+  display: flex;
+  flex-direction: row; /* row is default setting so I don't have to write this command but I did anyways. */
+  flex-grow: 1; /* ability for a flex item to grow if necessary. If set to 1, the remaining space in the container will be distributed equally to all children */
+}
+
+main {
+  width: 80%;
+}
+
+aside {
+  width: 20%;
+}
+
+/* footer {
+  width: 100%;
+} */
